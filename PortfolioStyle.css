@@ -1,0 +1,264 @@
+ /* http://meyerweb.com/eric/tools/css/reset/ 
+                v2.0 | 20110126
+            License: none (public domain)
+            */
+
+                html, body, div, span, applet, object, iframe,
+                h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+                a, abbr, acronym, address, big, cite, code,
+                del, dfn, em, img, ins, kbd, q, s, samp,
+                small, strike, strong, sub, sup, tt, var,
+                b, u, i, center,
+                dl, dt, dd, ol, ul, li,
+                fieldset, form, label, legend,
+                table, caption, tbody, tfoot, thead, tr, th, td,
+                article, aside, canvas, details, embed, 
+                figure, figcaption, footer, header, hgroup, 
+                menu, nav, output, ruby, section, summary,
+                time, mark, audio, video {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                    font-size: 100%;
+                    font: inherit;
+                    vertical-align: baseline;
+                }
+                /* HTML5 display-role reset for older browsers */
+                article, aside, details, figcaption, figure, 
+                footer, header, hgroup, menu, nav, section {
+                    display: block;
+                }
+                body {
+                    line-height: 1;
+                }
+                ol, ul {
+                    list-style: none;
+                }
+                blockquote, q {
+                    quotes: none;
+                }
+                blockquote:before, blockquote:after,
+                q:before, q:after {
+                    content: '';
+                    content: none;
+                }
+                table {
+                    border-collapse: collapse;
+                    border-spacing: 0;
+                }
+            
+/*MY CODE IS HERE */
+            
+            nav {
+                width: 15%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+                background-color: rgba(40, 40, 40, .8);
+                padding: 2%;
+                margin: auto;
+                text-align: center;
+                font-size: 25px;
+            }
+            nav ul li {
+                margin: 0 auto;
+                line-height: 1.5;
+                font-family: 'Lato', 'PT Sans Narrow', 'Open Sans', Verdana, Helvetica, sans-serif;
+            }
+            nav ul li a:visited, a:link, a:active, i {
+                border-bottom: none;
+                text-decoration: none;
+            }
+            nav ul li .current {
+                color: white;
+            }
+            .current {
+                font-weight: 800;
+            }
+            .logo {
+                
+            }
+           body {
+                font-size: 18.5px;
+                background-image: url(pattern1.png);
+                background-repeat: round;
+                background-color: rgba(0, 180, 200, 1);
+                overflow: auto;
+            }
+            footer {
+                font-size: 17px;
+                font-family:'Minion Pro', 'Hoefler Text', Palatino, 'Times New Roman', serif;
+                margin: 0 auto;
+                width: 90%;
+                color: white;
+                text-align: center;
+                padding: .25em;
+                clear: both;
+                overflow: hidden;
+            }
+            .container {
+                font-family:'Minion Pro', 'Hoefler Text', Palatino, 'Times New Roman', serif;
+                line-height: 1.15em;
+                margin: 0.5 auto;
+                background-color: rgba(250, 250, 250, .975);
+                width: 80%;
+                height: 100%;
+                overflow: hidden;
+                padding: 1.5em;
+                 margin-left: 19%;
+
+            }
+            h1, h2 {   
+                font-family: 'Lato', 'PT Sans Narrow', 'Open Sans', Verdana, Helvetica, sans-serif;
+            }
+            h1 {
+                font-size: 2.5em;
+                color: rgba(0, 180, 200, 1);
+                font-weight: 600;
+                line-height: 1em;
+                margin-bottom: .5em;
+            }
+            h2 {
+                color: rgba(150, 150, 150, 1);
+                font-size: 1.75em;
+                font-weight: 400;
+                line-height: 1em;
+                margin: .5em 0em;
+                font-style: italic;
+            }
+            h3 {
+                color: white;
+                font-size: 1.75em;
+                font-weight: 800;
+                line-height: 1em;
+                margin-bottom: .5em;
+                font-variant: small-caps;
+                font-family:'Minion Pro', 'Hoefler Text', Palatino, 'Times New Roman', serif;
+            }
+            h4 {
+                color: white;
+                font-size: 1.5em;
+                font-weight: 600;
+                line-height: 1em;
+                font-variant: small-caps;
+                font-family:'Minion Pro', 'Hoefler Text', Palatino, 'Times New Roman', serif;
+                margin-bottom: .5em;
+            }
+            p {
+                line-height: 1.25em;
+                margin: .25em 0em .5em 0em;
+            }
+            .info {
+                float: left;
+                margin: 1em .5em 1em 1.5em;
+                background-color: rgba(100, 100, 100, 1);
+                padding: .5em .5em .5em .5em;
+                /*border-radius: .5em;*/
+                color: white;
+            }
+            .form {
+                background-color: rgba(100, 100, 100, 1);
+                color: white;
+                float: left;
+                width: 20%;
+                margin: 0.5em 1.5em 1em .5em;
+                padding: 1em;
+                font-family: 'Lato', 'PT Sans Narrow', 'Open Sans', Verdana, Helvetica, sans-serif;
+                border-image: url(patternborder.png) 30 30 30 30 repeat;
+                border-width: 20px;
+                line-height: 1.35em;
+                display: block;
+            }
+            a {
+                color: rgba(0, 180, 200, 1);
+            }
+            a:hover {
+                font-weight: 800;
+            }
+            a:active {
+                color:white;
+            }
+            button {
+                color: white;
+                background-color: rgba(0, 180, 200, 1);
+                font-weight: 700;
+                font-size: 1.25em;
+            }
+            label::after {
+                content: "*";
+            }
+            input, textarea {
+                border-radius: .15em;
+                font-family: 'Lato', 'PT Sans Narrow', 'Open Sans', Verdana, Helvetica, sans-serif;
+                width: 90%;  
+            }
+   img.not(#logo), img.not(#collage) {
+                float: left;
+                margin: 1em;
+                padding: 1em;
+            }
+            .about {
+                float: left;
+                width: 35%;
+            }
+            .twitterfeed {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+            #collage {
+                position:relative;
+                bottom:0;
+                left: 0;
+                width: 100%;
+            }
+            .homeinfo {
+                float: left;
+                width: 60%;
+            }
+            .threetile {
+                width: 30%;
+                float:left;
+                margin: .45em;
+            }
+            .fourtile {
+                width: 18%;
+                float: left;
+                margin: .45em;
+                margin-bottom: 1em;
+            }
+            #adesign h1, h2, p {
+                clear:both;
+            }
+            .photogallery {
+                float: left;
+                margin-right: 1em;
+                margin-bottom: 1em;
+            }
+            .content {
+                width: 80%;
+            }
+            i {
+                margin: .25em;
+            }
+            #resumenav {
+                margin-bottom: 1.6em;
+            }
+            #headshot {
+                float: left;
+                margin: .5em;
+            }
+            em {
+                font-style: italic;
+            }
+
+/*for mobile */
+
+@media screen and (max-width: 524px) {
+	body {
+		font-size: 12px;
+		}
+	.info, .twitter-timeline {
+		visibility: hidden;
+		}
